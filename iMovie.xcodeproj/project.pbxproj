@@ -12,6 +12,9 @@
 		D49B70A024D72B8500F24CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49B709F24D72B8500F24CAD /* LaunchScreen.storyboard */; };
 		D49B70A724D72E7000F24CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49B70A624D72E6F00F24CAD /* Main.storyboard */; };
 		D49B70AA24D72F2000F24CAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D49B70AC24D72F2000F24CAD /* Localizable.strings */; };
+		D49B70B024D7309100F24CAD /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B70AF24D7309100F24CAD /* UILabel+Ext.swift */; };
+		D49B70B324D733B300F24CAD /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B70B224D733B300F24CAD /* UIButton+Ext.swift */; };
+		D49B70B524D7346400F24CAD /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B70B424D7346400F24CAD /* UITextField+Ext.swift */; };
 		D4C0E7CA24D717B6007F6D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0E7C924D717B6007F6D26 /* AppDelegate.swift */; };
 		D4C0E7CC24D717B6007F6D26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0E7CB24D717B6007F6D26 /* SceneDelegate.swift */; };
 		D4C0E7CE24D717B6007F6D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0E7CD24D717B6007F6D26 /* ViewController.swift */; };
@@ -26,6 +29,10 @@
 		D49B70A624D72E6F00F24CAD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D49B70AB24D72F2000F24CAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D49B70AD24D72F3000F24CAD /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D49B70AF24D7309100F24CAD /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		D49B70B124D7311E00F24CAD /* iMovie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMovie-Bridging-Header.h"; sourceTree = "<group>"; };
+		D49B70B224D733B300F24CAD /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		D49B70B424D7346400F24CAD /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		D4C0E7C624D717B6007F6D26 /* iMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C0E7C924D717B6007F6D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4C0E7CB24D717B6007F6D26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +96,7 @@
 				D49B709F24D72B8500F24CAD /* LaunchScreen.storyboard */,
 				D4C0E7CB24D717B6007F6D26 /* SceneDelegate.swift */,
 				D49B70AC24D72F2000F24CAD /* Localizable.strings */,
+				D49B70B124D7311E00F24CAD /* iMovie-Bridging-Header.h */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -99,6 +107,16 @@
 				D4C0E7CD24D717B6007F6D26 /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D49B70AE24D7308000F24CAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D49B70AF24D7309100F24CAD /* UILabel+Ext.swift */,
+				D49B70B224D733B300F24CAD /* UIButton+Ext.swift */,
+				D49B70B424D7346400F24CAD /* UITextField+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D4C0E7BD24D717B6007F6D26 = {
@@ -122,6 +140,7 @@
 		D4C0E7C824D717B6007F6D26 /* iMovie */ = {
 			isa = PBXGroup;
 			children = (
+				D49B70AE24D7308000F24CAD /* Extensions */,
 				D49B70A124D72BA100F24CAD /* ViewControllers */,
 				D49B709B24D7293400F24CAD /* Application */,
 				D49B709A24D7291300F24CAD /* Storyboard */,
@@ -249,7 +268,10 @@
 				D49B709924D7243D00F24CAD /* APIConstant.swift in Sources */,
 				D4C0E7CE24D717B6007F6D26 /* ViewController.swift in Sources */,
 				D4C0E7CA24D717B6007F6D26 /* AppDelegate.swift in Sources */,
+				D49B70B524D7346400F24CAD /* UITextField+Ext.swift in Sources */,
 				D4C0E7CC24D717B6007F6D26 /* SceneDelegate.swift in Sources */,
+				D49B70B024D7309100F24CAD /* UILabel+Ext.swift in Sources */,
+				D49B70B324D733B300F24CAD /* UIButton+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +347,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "iMovie/Application/iMovie-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -379,7 +403,9 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "iMovie/Application/iMovie-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
