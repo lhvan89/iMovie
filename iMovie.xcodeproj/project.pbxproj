@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86812E6841B844A1D2559E59 /* Pods_iMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA88D3A912B06F46C025B90C /* Pods_iMovie.framework */; };
+		D49B709924D7243D00F24CAD /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B709824D7243D00F24CAD /* APIConstant.swift */; };
+		D49B70A024D72B8500F24CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49B709F24D72B8500F24CAD /* LaunchScreen.storyboard */; };
 		D4C0E7CA24D717B6007F6D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0E7C924D717B6007F6D26 /* AppDelegate.swift */; };
 		D4C0E7CC24D717B6007F6D26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0E7CB24D717B6007F6D26 /* SceneDelegate.swift */; };
 		D4C0E7CE24D717B6007F6D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0E7CD24D717B6007F6D26 /* ViewController.swift */; };
 		D4C0E7D124D717B6007F6D26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C0E7CF24D717B6007F6D26 /* Main.storyboard */; };
 		D4C0E7D324D717B8007F6D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C0E7D224D717B8007F6D26 /* Assets.xcassets */; };
-		D4C0E7D624D717B8007F6D26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C0E7D424D717B8007F6D26 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6EB43E790A3509069D44885 /* Pods-iMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.debug.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		AA88D3A912B06F46C025B90C /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49B709824D7243D00F24CAD /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		D49B709F24D72B8500F24CAD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4C0E7C624D717B6007F6D26 /* iMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C0E7C924D717B6007F6D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4C0E7CB24D717B6007F6D26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D4C0E7CD24D717B6007F6D26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4C0E7D024D717B6007F6D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4C0E7D224D717B8007F6D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4C0E7D524D717B8007F6D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4C0E7D724D717B8007F6D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FF7F093B172BD4E7F54E31 /* Pods-iMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.release.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86812E6841B844A1D2559E59 /* Pods_iMovie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		634F58F950B0A98808E1854A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB43E790A3509069D44885 /* Pods-iMovie.debug.xcconfig */,
+				F7FF7F093B172BD4E7F54E31 /* Pods-iMovie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AFB897D8442D4923AC668499 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA88D3A912B06F46C025B90C /* Pods_iMovie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4685CAC24D723850072521F /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				D49B709824D7243D00F24CAD /* APIConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		D49B709A24D7291300F24CAD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D4C0E7CF24D717B6007F6D26 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D49B709B24D7293400F24CAD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D4C0E7C924D717B6007F6D26 /* AppDelegate.swift */,
+				D4C0E7D224D717B8007F6D26 /* Assets.xcassets */,
+				D4C0E7D724D717B8007F6D26 /* Info.plist */,
+				D49B709F24D72B8500F24CAD /* LaunchScreen.storyboard */,
+				D4C0E7CB24D717B6007F6D26 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D49B70A124D72BA100F24CAD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4C0E7CD24D717B6007F6D26 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		D4C0E7BD24D717B6007F6D26 = {
 			isa = PBXGroup;
 			children = (
 				D4C0E7C824D717B6007F6D26 /* iMovie */,
 				D4C0E7C724D717B6007F6D26 /* Products */,
+				634F58F950B0A98808E1854A /* Pods */,
+				AFB897D8442D4923AC668499 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +118,10 @@
 		D4C0E7C824D717B6007F6D26 /* iMovie */ = {
 			isa = PBXGroup;
 			children = (
-				D4C0E7C924D717B6007F6D26 /* AppDelegate.swift */,
-				D4C0E7CB24D717B6007F6D26 /* SceneDelegate.swift */,
-				D4C0E7CD24D717B6007F6D26 /* ViewController.swift */,
-				D4C0E7CF24D717B6007F6D26 /* Main.storyboard */,
-				D4C0E7D224D717B8007F6D26 /* Assets.xcassets */,
-				D4C0E7D424D717B8007F6D26 /* LaunchScreen.storyboard */,
-				D4C0E7D724D717B8007F6D26 /* Info.plist */,
+				D49B70A124D72BA100F24CAD /* ViewControllers */,
+				D49B709B24D7293400F24CAD /* Application */,
+				D49B709A24D7291300F24CAD /* Storyboard */,
+				D4685CAC24D723850072521F /* Constant */,
 			);
 			path = iMovie;
 			sourceTree = "<group>";
@@ -74,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4C0E7DA24D717B8007F6D26 /* Build configuration list for PBXNativeTarget "iMovie" */;
 			buildPhases = (
+				594609645D47AA3CEB56CA96 /* [CP] Check Pods Manifest.lock */,
 				D4C0E7C224D717B6007F6D26 /* Sources */,
 				D4C0E7C324D717B6007F6D26 /* Frameworks */,
 				D4C0E7C424D717B6007F6D26 /* Resources */,
+				34B4BED3DE794AA4D2AE87AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C0E7D624D717B8007F6D26 /* LaunchScreen.storyboard in Resources */,
+				D49B70A024D72B8500F24CAD /* LaunchScreen.storyboard in Resources */,
 				D4C0E7D324D717B8007F6D26 /* Assets.xcassets in Resources */,
 				D4C0E7D124D717B6007F6D26 /* Main.storyboard in Resources */,
 			);
@@ -133,11 +194,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34B4BED3DE794AA4D2AE87AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iMovie/Pods-iMovie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iMovie/Pods-iMovie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iMovie/Pods-iMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		594609645D47AA3CEB56CA96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iMovie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4C0E7C224D717B6007F6D26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49B709924D7243D00F24CAD /* APIConstant.swift in Sources */,
 				D4C0E7CE24D717B6007F6D26 /* ViewController.swift in Sources */,
 				D4C0E7CA24D717B6007F6D26 /* AppDelegate.swift in Sources */,
 				D4C0E7CC24D717B6007F6D26 /* SceneDelegate.swift in Sources */,
@@ -153,14 +257,6 @@
 				D4C0E7D024D717B6007F6D26 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D4C0E7D424D717B8007F6D26 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4C0E7D524D717B8007F6D26 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,11 +378,13 @@
 		};
 		D4C0E7DB24D717B8007F6D26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EB43E790A3509069D44885 /* Pods-iMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AWN5653TC6;
-				INFOPLIST_FILE = iMovie/Info.plist;
+				INFOPLIST_FILE = iMovie/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +398,13 @@
 		};
 		D4C0E7DC24D717B8007F6D26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7FF7F093B172BD4E7F54E31 /* Pods-iMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AWN5653TC6;
-				INFOPLIST_FILE = iMovie/Info.plist;
+				INFOPLIST_FILE = iMovie/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
