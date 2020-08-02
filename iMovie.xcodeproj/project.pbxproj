@@ -10,10 +10,11 @@
 		86812E6841B844A1D2559E59 /* Pods_iMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA88D3A912B06F46C025B90C /* Pods_iMovie.framework */; };
 		D49B709924D7243D00F24CAD /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B709824D7243D00F24CAD /* APIConstant.swift */; };
 		D49B70A024D72B8500F24CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49B709F24D72B8500F24CAD /* LaunchScreen.storyboard */; };
+		D49B70A724D72E7000F24CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49B70A624D72E6F00F24CAD /* Main.storyboard */; };
+		D49B70AA24D72F2000F24CAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D49B70AC24D72F2000F24CAD /* Localizable.strings */; };
 		D4C0E7CA24D717B6007F6D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0E7C924D717B6007F6D26 /* AppDelegate.swift */; };
 		D4C0E7CC24D717B6007F6D26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0E7CB24D717B6007F6D26 /* SceneDelegate.swift */; };
 		D4C0E7CE24D717B6007F6D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0E7CD24D717B6007F6D26 /* ViewController.swift */; };
-		D4C0E7D124D717B6007F6D26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C0E7CF24D717B6007F6D26 /* Main.storyboard */; };
 		D4C0E7D324D717B8007F6D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C0E7D224D717B8007F6D26 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -22,11 +23,13 @@
 		AA88D3A912B06F46C025B90C /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49B709824D7243D00F24CAD /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		D49B709F24D72B8500F24CAD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D49B70A624D72E6F00F24CAD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D49B70AB24D72F2000F24CAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D49B70AD24D72F3000F24CAD /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D4C0E7C624D717B6007F6D26 /* iMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C0E7C924D717B6007F6D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4C0E7CB24D717B6007F6D26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D4C0E7CD24D717B6007F6D26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D4C0E7D024D717B6007F6D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4C0E7D224D717B8007F6D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4C0E7D724D717B8007F6D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7FF7F093B172BD4E7F54E31 /* Pods-iMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.release.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,7 +75,7 @@
 		D49B709A24D7291300F24CAD /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				D4C0E7CF24D717B6007F6D26 /* Main.storyboard */,
+				D49B70A624D72E6F00F24CAD /* Main.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -85,6 +88,7 @@
 				D4C0E7D724D717B8007F6D26 /* Info.plist */,
 				D49B709F24D72B8500F24CAD /* LaunchScreen.storyboard */,
 				D4C0E7CB24D717B6007F6D26 /* SceneDelegate.swift */,
+				D49B70AC24D72F2000F24CAD /* Localizable.strings */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -169,7 +173,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				vi,
 			);
 			mainGroup = D4C0E7BD24D717B6007F6D26;
 			productRefGroup = D4C0E7C724D717B6007F6D26 /* Products */;
@@ -186,9 +190,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49B70A724D72E7000F24CAD /* Main.storyboard in Resources */,
+				D49B70AA24D72F2000F24CAD /* Localizable.strings in Resources */,
 				D49B70A024D72B8500F24CAD /* LaunchScreen.storyboard in Resources */,
 				D4C0E7D324D717B8007F6D26 /* Assets.xcassets in Resources */,
-				D4C0E7D124D717B6007F6D26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +256,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D4C0E7CF24D717B6007F6D26 /* Main.storyboard */ = {
+		D49B70AC24D72F2000F24CAD /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D4C0E7D024D717B6007F6D26 /* Base */,
+				D49B70AB24D72F2000F24CAD /* en */,
+				D49B70AD24D72F3000F24CAD /* vi */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -266,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -326,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

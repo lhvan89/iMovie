@@ -8,5 +8,6 @@ target 'iMovie' do
   # Pods for iMovie
   pod 'Alamofire'
   pod 'IQKeyboardManagerSwift'
+  pod 'Localize-Swift'
 
 end
