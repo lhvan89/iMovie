@@ -6,8 +6,9 @@ target 'iMovie' do
   use_frameworks!
 
   # Pods for iMovie
-  pod 'Alamofire'
+#  pod 'Alamofire'
   pod 'IQKeyboardManagerSwift'
   pod 'Localize-Swift'
+  pod 'AlamofireObjectMapper', '~> 5.2'
 
 end
