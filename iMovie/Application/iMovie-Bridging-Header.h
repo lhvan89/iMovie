@@ -10,6 +10,8 @@
 #define iMovie_Bridging_Header_h
 
 @import AlamofireObjectMapper;
+@import ObjectMapper;
+@import Alamofire;
 @import IQKeyboardManagerSwift;
 @import Localize_Swift;
 

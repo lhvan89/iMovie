@@ -12,15 +12,17 @@ import ObjectMapper
 class BaseResponse<T: Mappable>: Mappable {
     var Title: String = ""
     var Result: T?
+    var Results: [T] = []
     var Status = StatusModel()
     
     required init?(map: Map) {
     }
     
     func mapping(map: Map) {
-        self.Title  <- map["Title"]
-        self.Result <- map["Result"]
-        self.Status <- map["Status"]
+        self.Title      <- map["Title"]
+        self.Result     <- map["Result"]
+        self.Results    <- map["Result"]
+        self.Status     <- map["Status"]
     }
 }
 

@@ -7,60 +7,73 @@
 //
 
 import Foundation
-import Alamofire
 
-enum Router: URLRequestConvertible {
-    case DashboadrList
-    case GetDashboardMenu
+protocol Router: URLRequestConvertible {
+    static var baseURLString: String { get }
+    var method: HTTPMethod { get }
+    var path: String { get }
+    var parameters: Parameters? { get }
+    var headers: HTTPHeaders { get }
+    var timeOut: TimeInterval { get }
+    func asURLRequest() throws -> URLRequest
+}
+
+extension Router {
     
-    var path: String {
-        switch self {
-        case .DashboadrList:
-            return "trinhky/DashboardList"
-        case .GetDashboardMenu:
-            return "admin/LayMenu"
-        }
+    static var baseURLString : String {
+        return "http://ttcapi.msm.com.vn/api/"
     }
     
-    var method: HTTPMethod {
-        switch self {
-        default:
-            return .post
-        }
-    }
-    
-    var baseURL: URL {
-        return URL(string: "http://ttcapi.msm.com.vn/api/")!
-    }
-    
-    var headers: HTTPHeaders {
-        
-        var headers = ["Accept": "application/json; charset=utf-8"]
-        headers["Token"] = "+pAo+OijHZigafP7jnHOA8xIDdvA7Q4FLAgH4NyEU/svH6UN5jHkFAE3CFNwVRnaNzcIW6pJYrGdIEcrLN5VYayA5ZhWdX+Yqg5RGc6qit5FLUhDCrAMCo4SzF1aBUy0X+YfhFFwJTtV3gpg9w30RulpSZDfWJy8f+8W377AvLkmRfqBRDvFHp9AGnZuMGbkAvUzpoC1Gt1xWLUnnoDNxgHK9fuV6VpU/hFOrAyytWk="
-        headers["Content-Type"] = "application/json"
-        headers["Lang"] = "vi-VN"
+    var defaultHeaders: HTTPHeaders {
+        var headers = ["Accept": "application/json; charset=utf-8", "Content-Type": "application/json"]
+        headers["Lang"] = Localize.currentLanguage() == "en" ? "en-US" : "vi-VN"
         headers["SiteUrl"] = "ttc"
-        
+        headers["Token"] = "+pAo+OijHZigafP7jnHOA8xIDdvA7Q4FLAgH4NyEU/svH6UN5jHkFAE3CFNwVRnaNzcIW6pJYrGdIEcrLN5VYayA5ZhWdX+Yqg5RGc6qit5FLUhDCrAMCo4SzF1aBUy0X+YfhFFwJTtV3gpg9w30RulpSZDfWJy8f+8W377AvLkmRfqBRDvFHp9AGnZuMGbkAvUzpoC1Gt1xWLUnnoDNxgHK9fuV6VpU/hFOrAyytWk="
         return headers
     }
     
-    var parameters: Parameters {
-        switch self {
-        default:
-            return [:]
-        }
+    var defaultTimeOut: TimeInterval {
+        return 40
     }
     
-    func asURLRequest() throws -> URLRequest {
-        let url = baseURL.appendingPathComponent(path)
-        var request = URLRequest(url: url)
-
-        request.httpMethod = method.rawValue
+    // MARK: - HTTPMethod
+    var method: HTTPMethod {
+        return .post
+    }
+    
+    var headers: HTTPHeaders {
+        return self.defaultHeaders
+    }
+    
+    var timeOut: TimeInterval {
+        return self.defaultTimeOut
+    }
+    
+    public func asURLRequest() throws -> URLRequest {
+        let url = try Self.baseURLString.asURL()
         
+        // setting path
+        var urlRequest = URLRequest(url: url.appendingPathComponent(path))
+
+        // setting method
+        urlRequest.httpMethod = method.rawValue
+        
+        // setting header
         for (key, value) in headers {
-            request.addValue(value, forHTTPHeaderField: key)
+            urlRequest.addValue(value, forHTTPHeaderField: key)
         }
         
-        return request
+        // setting params
+        if let parameters = parameters {
+            if method == .get {
+                urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
+            } else {
+                urlRequest = try JSONEncoding.default.encode(urlRequest, with: parameters)
+            }
+        }
+        
+        urlRequest.timeoutInterval = timeOut
+        
+        return urlRequest
     }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		86812E6841B844A1D2559E59 /* Pods_iMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA88D3A912B06F46C025B90C /* Pods_iMovie.framework */; };
+		D403ABF024ECD7FA00906096 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D403ABEF24ECD7FA00906096 /* DashboardRouter.swift */; };
+		D403ABF224ED05BB00906096 /* TapMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D403ABF124ED05BB00906096 /* TapMenuModel.swift */; };
 		D43EC56524EB7F1400CB268D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43EC56424EB7F1400CB268D /* APIClient.swift */; };
 		D43EC56724EB877B00CB268D /* Data+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43EC56624EB877B00CB268D /* Data+Ext.swift */; };
 		D43EC56A24EB910300CB268D /* DashboardMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43EC56924EB910300CB268D /* DashboardMenuModel.swift */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		A6EB43E790A3509069D44885 /* Pods-iMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.debug.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		AA88D3A912B06F46C025B90C /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D403ABEF24ECD7FA00906096 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		D403ABF124ED05BB00906096 /* TapMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapMenuModel.swift; sourceTree = "<group>"; };
 		D43EC56424EB7F1400CB268D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		D43EC56624EB877B00CB268D /* Data+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Ext.swift"; sourceTree = "<group>"; };
 		D43EC56924EB910300CB268D /* DashboardMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardMenuModel.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				D43EC56924EB910300CB268D /* DashboardMenuModel.swift */,
+				D403ABF124ED05BB00906096 /* TapMenuModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				D4D7DA4424E5338D00CEEE41 /* Router.swift */,
+				D403ABEF24ECD7FA00906096 /* DashboardRouter.swift */,
 				D43EC56424EB7F1400CB268D /* APIClient.swift */,
 				D43EC56B24EBCF2800CB268D /* BaseResponse.swift */,
 			);
@@ -310,11 +316,13 @@
 				D43EC56724EB877B00CB268D /* Data+Ext.swift in Sources */,
 				D43EC56A24EB910300CB268D /* DashboardMenuModel.swift in Sources */,
 				D4D7DA4524E5338D00CEEE41 /* Router.swift in Sources */,
+				D403ABF024ECD7FA00906096 /* DashboardRouter.swift in Sources */,
 				D49B709924D7243D00F24CAD /* APIConstant.swift in Sources */,
 				D4C0E7CE24D717B6007F6D26 /* ViewController.swift in Sources */,
 				D43EC56524EB7F1400CB268D /* APIClient.swift in Sources */,
 				D4C0E7CA24D717B6007F6D26 /* AppDelegate.swift in Sources */,
 				D49B70B524D7346400F24CAD /* UITextField+Ext.swift in Sources */,
+				D403ABF224ED05BB00906096 /* TapMenuModel.swift in Sources */,
 				D4C0E7CC24D717B6007F6D26 /* SceneDelegate.swift in Sources */,
 				D49A59B424EA1DAE004F3E20 /* Settings.swift in Sources */,
 				D49B70B024D7309100F24CAD /* UILabel+Ext.swift in Sources */,

@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import ObjectMapper
-import Alamofire
 
 class APIClient {
+    
+    // Request Object
     static func requestObject<T: Mappable>(_ router: Router, _ type: T.Type, completionHandler: @escaping ((_ result: T?) -> Void)) {
         Alamofire.request(router).responseObject { (response: DataResponse<BaseResponse<T>>) in
             self.printResponse(request: response.request, data: response.data!)
@@ -20,6 +20,28 @@ class APIClient {
                 switch status.Code {
                     case 200:
                         completionHandler(data.Result)
+                    default:
+                        print(status.Desc)
+                        completionHandler(nil)
+                }
+                
+            case .failure(let error):
+                print(error)
+                completionHandler(nil)
+            }
+        }
+    }
+    
+    // Request Collection
+    static func requestCollection<T: Mappable>(_ router: Router, _ type: T.Type, completionHandler: @escaping ((_ result: [T]?) -> Void)) {
+        Alamofire.request(router).responseObject { (response: DataResponse<BaseResponse<T>>) in
+            self.printResponse(request: response.request, data: response.data!)
+            switch response.result {
+            case .success( let data):
+                guard let status = data.Status as? StatusModel else { return }
+                switch status.Code {
+                    case 200:
+                        completionHandler(data.Results)
                     default:
                         print(status.Desc)
                         completionHandler(nil)
